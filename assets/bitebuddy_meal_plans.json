@@ -1,0 +1,219 @@
+[
+{
+  "id": "gym_daily",
+  "type": "daily",
+  "tags": ["gym", "workout", "high_protein"],
+  "restrictions": [],
+  "plan": {
+    "breakfast": "Protein oats with banana & boiled eggs",
+    "lunch": "Grilled chicken breast with brown rice",
+    "dinner": "Egg omelette with vegetables",
+    "snack": "Greek yogurt & nuts"
+  }
+},
+{
+  "id": "gym_weekly",
+  "type": "weekly",
+  "tags": ["gym", "workout", "high_protein"],
+  "restrictions": [],
+  "plan": {
+    "monday": { "breakfast": "Protein oats", "lunch": "Chicken rice", "dinner": "Egg omelette", "snack": "Boiled eggs" },
+    "tuesday": { "breakfast": "Smoothie", "lunch": "Fish quinoa", "dinner": "Chicken stir fry", "snack": "Peanut toast" },
+    "wednesday": { "breakfast": "Omelette", "lunch": "Chicken salad", "dinner": "Lentils", "snack": "Yogurt" },
+    "thursday": { "breakfast": "Oats", "lunch": "Chicken wrap", "dinner": "Grilled fish", "snack": "Nuts" },
+    "friday": { "breakfast": "Smoothie", "lunch": "Rice & chicken", "dinner": "Egg curry", "snack": "Fruit" },
+    "saturday": { "breakfast": "Toast & eggs", "lunch": "Chicken bowl", "dinner": "Veg omelette", "snack": "Protein bar" },
+    "sunday": { "breakfast": "Pancakes (protein)", "lunch": "Grilled chicken", "dinner": "Light soup", "snack": "Yogurt" }
+  }
+},
+{
+  "id": "vegetarian_daily",
+  "type": "daily",
+  "tags": ["vegetarian"],
+  "restrictions": ["meat"],
+  "plan": {
+    "breakfast": "Paneer paratha (light)",
+    "lunch": "Vegetable curry & roti",
+    "dinner": "Dal & rice",
+    "snack": "Fruit yogurt"
+  }
+},
+{
+  "id": "vegetarian_weekly",
+  "type": "weekly",
+  "tags": ["vegetarian"],
+  "restrictions": ["meat"],
+  "plan": {
+    "monday": { "breakfast": "Upma", "lunch": "Veg curry", "dinner": "Dal rice", "snack": "Fruit" },
+    "tuesday": { "breakfast": "Paratha", "lunch": "Chickpeas", "dinner": "Veg pulao", "snack": "Yogurt" },
+    "wednesday": { "breakfast": "Poha", "lunch": "Paneer curry", "dinner": "Roti sabzi", "snack": "Nuts" },
+    "thursday": { "breakfast": "Oats", "lunch": "Veg khichdi", "dinner": "Dal", "snack": "Fruit" },
+    "friday": { "breakfast": "Toast", "lunch": "Rajma rice", "dinner": "Veg soup", "snack": "Seeds" },
+    "saturday": { "breakfast": "Dosa", "lunch": "Veg biryani", "dinner": "Curd rice", "snack": "Fruit" },
+    "sunday": { "breakfast": "Pancakes", "lunch": "Veg pulao", "dinner": "Light curry", "snack": "Milk" }
+  }
+},
+{
+  "id": "vegan_daily",
+  "type": "daily",
+  "tags": ["vegan"],
+  "restrictions": ["meat", "dairy"],
+  "plan": {
+    "breakfast": "Chia pudding",
+    "lunch": "Chickpea salad",
+    "dinner": "Vegan curry & rice",
+    "snack": "Fruit bowl"
+  }
+},
+{
+  "id": "vegan_weekly",
+  "type": "weekly",
+  "tags": ["vegan"],
+  "restrictions": ["meat", "dairy"],
+  "plan": {
+    "monday": { "breakfast": "Chia pudding", "lunch": "Salad", "dinner": "Curry", "snack": "Fruit" },
+    "tuesday": { "breakfast": "Smoothie", "lunch": "Lentils", "dinner": "Veg stir fry", "snack": "Nuts" },
+    "wednesday": { "breakfast": "Oats", "lunch": "Chickpeas", "dinner": "Rice & veg", "snack": "Fruit" },
+    "thursday": { "breakfast": "Toast", "lunch": "Veg wrap", "dinner": "Soup", "snack": "Seeds" },
+    "friday": { "breakfast": "Smoothie", "lunch": "Salad", "dinner": "Dal", "snack": "Fruit" },
+    "saturday": { "breakfast": "Oats", "lunch": "Veg bowl", "dinner": "Rice", "snack": "Nuts" },
+    "sunday": { "breakfast": "Fruit", "lunch": "Curry", "dinner": "Light soup", "snack": "Dates" }
+  }
+},
+{
+  "id": "diabetes_daily",
+  "type": "daily",
+  "tags": ["diabetes"],
+  "restrictions": ["sugar"],
+  "plan": {
+    "breakfast": "Multigrain toast with boiled eggs",
+    "lunch": "Grilled chicken with vegetables",
+    "dinner": "Lentil soup",
+    "snack": "Almonds"
+  }
+},
+{
+  "id": "diabetes_weekly",
+  "type": "weekly",
+  "tags": ["diabetes"],
+  "restrictions": ["sugar"],
+  "plan": {
+    "monday": { "breakfast": "Oats", "lunch": "Chicken veg", "dinner": "Dal", "snack": "Nuts" },
+    "tuesday": { "breakfast": "Toast eggs", "lunch": "Fish salad", "dinner": "Veg soup", "snack": "Seeds" },
+    "wednesday": { "breakfast": "Smoothie (no sugar)", "lunch": "Chicken wrap", "dinner": "Lentils", "snack": "Fruit" },
+    "thursday": { "breakfast": "Oats", "lunch": "Veg curry", "dinner": "Grilled fish", "snack": "Nuts" },
+    "friday": { "breakfast": "Toast", "lunch": "Chicken salad", "dinner": "Soup", "snack": "Seeds" },
+    "saturday": { "breakfast": "Egg omelette", "lunch": "Rice veg", "dinner": "Dal", "snack": "Fruit" },
+    "sunday": { "breakfast": "Oats", "lunch": "Grilled chicken", "dinner": "Light soup", "snack": "Almonds" }
+  }
+},
+{
+  "id": "heart_daily",
+  "type": "daily",
+  "tags": ["heart"],
+  "restrictions": ["salt", "fried"],
+  "plan": {
+    "breakfast": "Oatmeal with berries",
+    "lunch": "Steamed fish & vegetables",
+    "dinner": "Vegetable soup",
+    "snack": "Walnuts"
+  }
+},
+{
+  "id": "heart_weekly",
+  "type": "weekly",
+  "tags": ["heart"],
+  "restrictions": ["salt", "fried"],
+  "plan": {
+    "monday": { "breakfast": "Oats", "lunch": "Fish veg", "dinner": "Soup", "snack": "Walnuts" },
+    "tuesday": { "breakfast": "Smoothie", "lunch": "Chicken salad", "dinner": "Veg curry", "snack": "Seeds" },
+    "wednesday": { "breakfast": "Toast", "lunch": "Steamed veg", "dinner": "Dal", "snack": "Fruit" },
+    "thursday": { "breakfast": "Oats", "lunch": "Fish rice", "dinner": "Soup", "snack": "Nuts" },
+    "friday": { "breakfast": "Smoothie", "lunch": "Veg wrap", "dinner": "Grilled chicken", "snack": "Fruit" },
+    "saturday": { "breakfast": "Toast", "lunch": "Veg curry", "dinner": "Soup", "snack": "Seeds" },
+    "sunday": { "breakfast": "Oats", "lunch": "Fish salad", "dinner": "Light veg", "snack": "Walnuts" }
+  }
+},
+{
+  "id": "bp_daily",
+  "type": "daily",
+  "tags": ["bp"],
+  "restrictions": ["salt"],
+  "plan": {
+    "breakfast": "Banana & oats",
+    "lunch": "Grilled chicken salad",
+    "dinner": "Steamed vegetables",
+    "snack": "Fruit bowl"
+  }
+},
+{
+  "id": "bp_weekly",
+  "type": "weekly",
+  "tags": ["bp"],
+  "restrictions": ["salt"],
+  "plan": {
+    "monday": { "breakfast": "Oats", "lunch": "Chicken salad", "dinner": "Veg soup", "snack": "Fruit" },
+    "tuesday": { "breakfast": "Smoothie", "lunch": "Fish veg", "dinner": "Dal", "snack": "Nuts" },
+    "wednesday": { "breakfast": "Toast", "lunch": "Veg curry", "dinner": "Soup", "snack": "Seeds" },
+    "thursday": { "breakfast": "Oats", "lunch": "Chicken wrap", "dinner": "Veg rice", "snack": "Fruit" },
+    "friday": { "breakfast": "Smoothie", "lunch": "Fish salad", "dinner": "Soup", "snack": "Nuts" },
+    "saturday": { "breakfast": "Toast", "lunch": "Veg bowl", "dinner": "Dal", "snack": "Fruit" },
+    "sunday": { "breakfast": "Oats", "lunch": "Chicken salad", "dinner": "Veg soup", "snack": "Seeds" }
+  }
+},
+{
+  "id": "lactose_daily",
+  "type": "daily",
+  "tags": ["lactose_intolerant"],
+  "restrictions": ["dairy"],
+  "plan": {
+    "breakfast": "Oats with almond milk",
+    "lunch": "Chicken & rice",
+    "dinner": "Vegetable curry",
+    "snack": "Peanuts"
+  }
+},
+{
+  "id": "lactose_weekly",
+  "type": "weekly",
+  "tags": ["lactose_intolerant"],
+  "restrictions": ["dairy"],
+  "plan": {
+    "monday": { "breakfast": "Oats milk", "lunch": "Chicken rice", "dinner": "Veg curry", "snack": "Nuts" },
+    "tuesday": { "breakfast": "Smoothie", "lunch": "Fish veg", "dinner": "Rice", "snack": "Fruit" },
+    "wednesday": { "breakfast": "Toast", "lunch": "Chicken wrap", "dinner": "Soup", "snack": "Seeds" },
+    "thursday": { "breakfast": "Oats", "lunch": "Veg bowl", "dinner": "Dal", "snack": "Fruit" },
+    "friday": { "breakfast": "Smoothie", "lunch": "Chicken salad", "dinner": "Veg curry", "snack": "Nuts" },
+    "saturday": { "breakfast": "Toast", "lunch": "Rice veg", "dinner": "Soup", "snack": "Fruit" },
+    "sunday": { "breakfast": "Oats", "lunch": "Chicken", "dinner": "Light veg", "snack": "Seeds" }
+  }
+},
+{
+  "id": "stomach_daily",
+  "type": "daily",
+  "tags": ["stomach"],
+  "restrictions": ["spicy", "fried"],
+  "plan": {
+    "breakfast": "Banana & toast",
+    "lunch": "Plain rice & yogurt",
+    "dinner": "Vegetable soup",
+    "snack": "Apple slices"
+  }
+},
+{
+  "id": "stomach_weekly",
+  "type": "weekly",
+  "tags": ["stomach"],
+  "restrictions": ["spicy", "fried"],
+  "plan": {
+    "monday": { "breakfast": "Toast", "lunch": "Rice yogurt", "dinner": "Soup", "snack": "Apple" },
+    "tuesday": { "breakfast": "Banana", "lunch": "Veg rice", "dinner": "Dal", "snack": "Fruit" },
+    "wednesday": { "breakfast": "Oats", "lunch": "Plain veg", "dinner": "Soup", "snack": "Apple" },
+    "thursday": { "breakfast": "Toast", "lunch": "Rice dal", "dinner": "Veg soup", "snack": "Fruit" },
+    "friday": { "breakfast": "Banana", "lunch": "Veg khichdi", "dinner": "Soup", "snack": "Apple" },
+    "saturday": { "breakfast": "Oats", "lunch": "Rice veg", "dinner": "Dal", "snack": "Fruit" },
+    "sunday": { "breakfast": "Toast", "lunch": "Plain rice", "dinner": "Light soup", "snack": "Apple" }
+  }
+}
+
+]

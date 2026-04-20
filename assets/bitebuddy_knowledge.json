@@ -1,0 +1,526 @@
+[
+   {
+    "intent": "islamic_greetings",
+    "questions": [
+      "assalamualaikum", "assalam o alaikum", "aoa", "salam"
+    ],
+    "answer": "Walaikum As Salam! 😊 I’m BiteBuddy, your food companion. How can I help you with your meals today?"
+  },
+  {
+    "intent": "islamic_greetings_reply",
+    "questions": [
+      "was", "walaikum salam", "walaikum assalam"
+    ],
+    "answer": "Walaikum As Salam! Hope you are having a wonderful day. Ready to cook something delicious? 🍴"
+  },
+  {
+    "intent": "general_greetings",
+    "questions": [
+      "hi", "hello", "hey", "hey there", "hi buddy", "hello bitebuddy", "good morning", "good afternoon", "good evening", "yo", "hi ya", "morning", "anyone home", "is anyone there", "hello bot", "hey friend", "greetings", "good to see you", "sup"
+    ],
+    "answer": "Hello! 😊 I’m BiteBuddy, your food companion. What would you like to cook or eat today?"
+  },
+  {
+    "intent": "bot_status",
+    "questions": [
+      "how are you", "how r u", "what's up", "are you there", "can you help me"
+    ],
+    "answer": "I'm doing great and ready to cook! 🍳 I'm here and always happy to help you find the perfect recipe."
+  },
+  {
+    "intent": "diet_diabetes",
+    "questions": ["i am diabetic", "diabetes friendly food"],
+    "answer": "For diabetes, focus on 'complex carbs' like whole grains and fiber-rich veggies to keep blood sugar stable. Want some low-sugar meal ideas? 🥦"
+  },
+  {
+    "intent": "diet_bp",
+    "questions": ["food for high bp", "low salt food"],
+    "answer": "Keeping BP in check means reducing sodium. Use lemon juice or herbs for flavor instead of extra salt! 🍋"
+  },
+  {
+    "intent": "diet_weight_loss",
+    "questions": ["weight loss food", "low calorie meals", "gym diet"],
+    "answer": "Weight loss is about high-protein and high-fiber meals that keep you full. Think grilled chicken, lentils, and big salads! 🥗"
+  },
+  {
+    "intent": "diet_vegetarian",
+    "questions": ["vegetarian protein sources", "pure veg recipes"],
+    "answer": "Who says vegetarians lack protein? Paneer, chickpeas, lentils (daal), and Greek yogurt are your best friends! 🧀"
+  },
+  {
+    "intent": "fix_salty",
+    "questions": ["food is too salty", "i added too much salt"],
+    "answer": "Too much salt? Drop a peeled, raw potato into the curry for 10 minutes; it will soak up the excess salt like a sponge! 🥔"
+  },
+  {
+    "intent": "fix_spicy",
+    "questions": ["food is too spicy", "too much chili"],
+    "answer": "If it's too spicy, add dairy! A spoonful of yogurt, cream, or even a little coconut milk will cool the heat down immediately. 🥛"
+  },
+  {
+    "intent": "fix_oily",
+    "questions": ["how to make it less oily"],
+    "answer": "Too much oil? If it's a gravy, let it sit and spoon the oil off the top. Or, drop an ice cube in—the oil will freeze to it, and you can lift it out! 🧊"
+  },
+  {
+    "intent": "fix_watery",
+    "questions": ["sauce is too thin", "fix watery gravy"],
+    "answer": "To thicken a watery gravy, mash a few of the cooked vegetables inside it or add a quick cornstarch slurry. 🥣"
+  },
+  {
+    "intent": "store_general",
+    "questions": ["how to store food", "how long food lasts"],
+    "answer": "Most cooked food is safe for 3-4 days in the fridge. Always use airtight glass or BPA-free plastic containers to keep it fresh! 🍱"
+  },
+  {
+    "intent": "store_freeze",
+    "questions": ["can i freeze this", "can i freeze cooked rice"],
+    "answer": "You can freeze most things, including cooked rice and curries! Just make sure they have cooled down completely before putting them in the freezer. ❄️"
+  },
+  {
+    "intent": "store_reheat",
+    "questions": ["can i reheat this", "how to reheat"],
+    "answer": "Reheat thoroughly until steaming! For pizza or fried food, use an oven or air fryer to keep it from getting soggy. 🍕"
+  },
+
+  {
+    "intent": "recipe_pasta",
+    "questions": ["how to make white sauce pasta"],
+    "answer": "White sauce pasta (Alfredo) is all about the roux! You'll need butter, flour, and milk. Would you like the step-by-step measurements? 🍝"
+  },
+  {
+    "intent": "recipe_biryani",
+    "questions": ["recipe for chicken biryani"],
+    "answer": "The secret to a great Biryani is the 'Dum' (steam cooking) and high-quality basmati rice. Should I send you the list of spices you'll need? 🍛"
+  },
+  {
+    "intent": "recipe_steak",
+    "questions": ["how to cook a steak"],
+    "answer": "For a perfect steak, make sure the pan is screaming hot and let the meat rest for 5 minutes after cooking. Do you prefer yours Rare, Medium, or Well Done? 🥩"
+  },
+  {
+    "intent": "recipe_pancakes",
+    "questions": ["easy pancake recipe"],
+    "answer": "Fluffy pancakes need a bit of rest time for the batter! Just flour, eggs, milk, and a pinch of baking powder. Ready for the steps? 🥞"
+  },
+  {
+    "intent": "recipe_cookies",
+    "questions": ["how to make chocolate chip cookies"],
+    "answer": "Pro tip: Use chilled butter for a chewier cookie and don't overmix the dough! Should I give you the baking temperature and timing? 🍪"
+  },
+  {
+    "intent": "recipe_butter_chicken",
+    "questions": ["authentic butter chicken recipe"],
+    "answer": "Authentic Butter Chicken (Murgh Makhani) requires marinating the chicken in yogurt and spices first. Want the secret to the creamy tomato gravy? 🥘"
+  },
+  {
+    "intent": "recipe_sushi",
+    "questions": ["how to make sushi at home"],
+    "answer": "Homemade sushi starts with seasoned vinegar rice. It’s easier than it looks! Do you have a bamboo rolling mat ready? 🍣"
+  },
+  {
+    "intent": "recipe_potatoes",
+    "questions": ["best way to roast potatoes"],
+    "answer": "For the ultimate crunch, parboil your potatoes for 5 minutes before roasting them with olive oil and rosemary. Want the full oven settings? 🥔"
+  },
+  {
+    "intent": "recipe_pizza",
+    "questions": ["recipe for homemade pizza dough"],
+    "answer": "Pizza dough needs patience and warm water to activate the yeast. I can give you a 30-minute quick recipe or a traditional overnight one. Which do you prefer? 🍕"
+  },
+  {
+    "intent": "recipe_quinoa",
+    "questions": ["how to cook quinoa"],
+    "answer": "The trick to fluffy quinoa is a 1:2 ratio (one part quinoa to two parts water). Always rinse it first to remove the bitterness! 🥗"
+  },
+  {
+    "intent": "recipe_omelette",
+    "questions": ["how to make a classic omelette"],
+    "answer": "A classic French omelette should be smooth and slightly runny in the middle. Low heat is the key! Ready to cook? 🍳"
+  },
+  {
+    "intent": "recipe_lasagna",
+    "questions": ["best lasagna recipe"],
+    "answer": "The best lasagna is all about the layers—rich meat sauce, creamy Béchamel, and lots of cheese. Want the assembly order? Layer by layer! 🧀"
+  },
+  {
+    "intent": "recipe_hummus",
+    "questions": ["how to make hummus"],
+    "answer": "For extra smooth hummus, peel the skins off the chickpeas or add a tiny bit of ice water while blending. Want the tahini ratio? 🧆"
+  },
+  {
+    "intent": "recipe_greek_salad",
+    "questions": ["recipe for greek salad"],
+    "answer": "A real Greek salad has no lettuce! Just tomatoes, cucumbers, onion, olives, and a big block of feta cheese on top. 🥗"
+  },
+  {
+    "intent": "recipe_sponge_cake",
+    "questions": ["how to bake a sponge cake"],
+    "answer": "For a light sponge cake, whisk your eggs and sugar until they are pale and fluffy. I can give you the exact measurements for a 7-inch pan! 🍰"
+  },
+  {
+    "intent": "recipe_karahi",
+    "questions": ["how to make chicken karahi"],
+    "answer": "The soul of a Chicken Karahi is fresh ginger and black pepper. No onions allowed in the authentic version! Want the step-by-step? 🥘"
+  },
+  {
+    "intent": "recipe_salmon",
+    "questions": ["best way to cook salmon"],
+    "answer": "Pan-searing salmon skin-side down gives you that crispy texture. Should I give you a honey-garlic or a lemon-butter recipe? 🐟"
+  },
+  {
+    "intent": "recipe_caesar_salad",
+    "questions": ["how to make a caesar salad"],
+    "answer": "A great Caesar is all about the dressing—anchovies, garlic, and parmesan. I can also give you a vegetarian-friendly dressing version! 🥗"
+  },
+  {
+    "intent": "recipe_stir_fry",
+    "questions": ["recipe for vegetable stir fry"],
+    "answer": "Stir fry is all about high heat and fast movement. Have your soy sauce and sesame oil ready! Want to know which veggies cook fastest? 🥦"
+  },
+  {
+    "intent": "recipe_stroganoff",
+    "questions": ["how to make beef stroganoff"],
+    "answer": "Beef Stroganoff is a Russian classic with a creamy mushroom and sour cream sauce. It's perfect over egg noodles! 🍝"
+  },
+  {
+    "intent": "recipe_paneer",
+    "questions": ["how to make shahi paneer"],
+    "answer": "Shahi Paneer is a 'Royal' dish made with nuts and cream for a rich, mild gravy. Should I show you how to make the base paste? 🧀"
+  },
+  {
+    "intent": "recipe_fried_rice",
+    "questions": ["step by step fried rice"],
+    "answer": "Rule #1 for Fried Rice: Use cold, leftover rice! It prevents the dish from getting mushy. Ready for the seasoning steps? 🍚"
+  },
+  {
+    "intent": "recipe_dal_makhani",
+    "questions": ["how to make dal makhani"],
+    "answer": "Dal Makhani needs slow cooking for at least 2 hours to get that buttery, restaurant-style texture. Do you have black lentils ready? 🥣"
+  },
+  {
+    "intent": "recipe_carbonara",
+    "questions": ["recipe for spaghetti carbonara"],
+    "answer": "Traditional Carbonara uses eggs and cheese for the creaminess—no heavy cream! Want to learn the technique to avoid scrambling the eggs? 🍝"
+  },
+  {
+    "intent": "recipe_basmati",
+    "questions": ["how to cook perfect basmati rice"],
+    "answer": "To get long, separate grains, soak the rice for 30 minutes and add a teaspoon of oil to the boiling water. Want the exact water ratio? 🍚"
+  },
+  {
+    "intent": "recipe_smoothie",
+    "questions": ["how to make a mango smoothie"],
+    "answer": "A mango smoothie is best with ripe Alphonso mangos and a splash of coconut milk. Want a version with or without yogurt? 🥭"
+  },
+  {
+    "intent": "recipe_taco",
+    "questions": ["best taco recipe"],
+    "answer": "Tacos are all about the toppings! I have recipes for Spicy Beef, Zesty Shrimp, or Black Bean. Which one should we start with? 🌮"
+  },
+  {
+    "intent": "recipe_french_toast",
+    "questions": ["how to make french toast"],
+    "answer": "Use thick, slightly stale bread for the best French Toast so it absorbs the custard without falling apart. Ready for the cinnamon-vanilla mix? 🍞"
+  },
+  {
+    "intent": "recipe_soup",
+    "questions": ["recipe for clear soup"],
+    "answer": "Clear soup is light and healthy. The secret is a good quality broth and finely julienned vegetables. Want the ginger-garlic base recipe? 🥣"
+  },
+  {
+    "intent": "recipe_garlic_bread",
+    "questions": ["how to make garlic bread"],
+    "answer": "For the best garlic bread, mix softened butter with fresh minced garlic and parsley, then broil until golden. Want it extra cheesy? 🥖"
+  },
+  {
+    "intent": "confused_food",
+    "questions": [
+      "i don't know what to cook", "i am confused what to eat", "suggest something", "recommend something", "what should i eat today", "anything easy to make", "surprise me", "what do people usually eat"
+    ],
+    "answer": "No worries! 😊 Let’s figure it out. How much time do you have, or are you looking for something healthy, quick, or comforting?"
+  },
+  {
+    "intent": "sad_mood",
+    "questions": [
+      "i am sad", "i am depressed", "i feel stressed", "i feel low", "bad mood", "what should i eat when sad", "comfort food ideas", "i had a bad day", "i am tired", "i feel exhausted"
+    ],
+    "answer": "I’m sorry you’re feeling this way. ❤️ Food can be a great hug! I recommend something comforting like a warm bowl of pasta, a creamy soup, or maybe some chocolate."
+  },
+  {
+    "intent": "happy_mood",
+    "questions": [
+      "i am happy", "i feel good", "i am excited", "celebration food", "what should i cook today happily", "i feel energetic", "good mood food"
+    ],
+    "answer": "That’s awesome! 🎉 Let's celebrate that energy. How about making something fun like homemade pizza, a vibrant salad, or a tray of brownies?"
+  },
+  
+  {
+    "intent": "thanks",
+    "questions": [
+      "thanks", "thank you", "okay", "alright", "cool", "nice"
+    ],
+    "answer": "You’re very welcome! 😊 Happy cooking! Let me know if you need anything else."
+  },
+   {
+    "intent": "confused_food",
+    "questions": [
+      "i don't know what to cook",
+      "i am confused what to eat",
+      "suggest something",
+      "recommend something",
+      "what should i eat today",
+      "anything easy to make",
+      "surprise me",
+      "what do people usually eat"
+    ],
+    "answer": "No worries! 😊 Tell me how much time you have, or whether you want something healthy, quick, or comforting."
+  },
+
+  {
+    "intent": "sad_mood",
+    "questions": [
+      "i am sad",
+      "i am depressed",
+      "i feel stressed",
+      "i feel low",
+      "bad mood",
+      "what should i eat when sad",
+      "comfort food ideas",
+      "i had a bad day",
+      "i am tired",
+      "i feel exhausted"
+    ],
+    "answer": "When you’re feeling low, comfort foods help ❤️ Warm soups, pasta, rice dishes, chocolate desserts, or home-style meals are great choices."
+  },
+
+  {
+    "intent": "happy_mood",
+    "questions": [
+      "i am happy",
+      "i feel good",
+      "i am excited",
+      "celebration food",
+      "what should i cook today happily",
+      "i feel energetic",
+      "good mood food"
+    ],
+    "answer": "That’s awesome! 🎉 Try cooking something fun like pasta, pizza, biryani, desserts, or your favorite recipe."
+  },
+
+ {
+    "intent": "quick_under_10",
+    "questions": ["meal under 10 minutes", "need food in 5 mins", "instant food ideas"],
+    "answer": "In a huge rush? ⏱️ Go for a classic fried egg sandwich, a chickpea salad, or microwave oatmeal. Fast, filling, and zero fuss!"
+  },
+  {
+    "intent": "quick_under_20",
+    "questions": ["meal under 15 minutes", "meal under 20 minutes", "quick dinner"],
+    "answer": "Got 20 minutes? You can whip up a delicious pasta aglio e olio, stir-fried veggies, or some quick quesadillas. 🌮"
+  },
+  {
+    "intent": "lazy_cooking",
+    "questions": ["lazy cooking ideas", "minimal effort food", "one pot meals"],
+    "answer": "Feeling lazy? 😴 One-pot rice or a sheet-pan roasted chicken and veggies are your best friends. Put them on the heat and let them do the work!"
+  },
+  {
+    "intent": "guest_dawat",
+    "questions": ["guests coming", "dawat food ideas", "fancy dawat menu", "impress my in-laws"],
+    "answer": "Time to shine! ✨ For a traditional dawat, you can't go wrong with Mutton Kunna, Chicken Reshmi Handi, or a fragrant Zafrani Biryani."
+  },
+  {
+    "intent": "guest_casual",
+    "questions": ["friends coming over", "party food ideas", "potluck ideas"],
+    "answer": "Keeping it casual? 🍕 Go for a DIY Taco bar, a big tray of cheesy nachos, or a variety of sliders. Perfect for sharing and chatting!"
+  },
+  {
+    "intent": "guest_starters",
+    "questions": ["easy appetizers for guests", "finger foods", "snack ideas for guests"],
+    "answer": "Start strong! 🍤 Serve some crispy hot wings, mini samosas, or bruschetta while your guests wait for the main course."
+  },
+  {
+    "intent": "veg_desi",
+    "questions": ["vegetarian food", "veg recipes", "simple veg dinner"],
+    "answer": "Desi veg is so comforting! 🍅 Try Aloo Gobi, Daal Tadka, or Bhindi Masala paired with hot rotis."
+  },
+  {
+    "intent": "veg_paneer",
+    "questions": ["paneer dishes", "vegetarian protein"],
+    "answer": "Paneer is the king of veg protein! 🧀 I can help you make Palak Paneer, Paneer Tikka, or a rich Shahi Paneer."
+  },
+  {
+    "intent": "vegan_basics",
+    "questions": ["vegan food", "plant based recipes", "no animal products"],
+    "answer": "Go green! 🌱 Focus on lentils, beans, and tofu. Coconut milk is a great way to add creaminess to vegan curries without using dairy."
+  },
+  {
+    "intent": "diet_diabetes",
+    "questions": ["i am diabetic", "low sugar meals"],
+    "answer": "Managing sugar? 🥦 Stick to Low-GI foods like bitter gourd (karela), leafy greens, and lentils. Avoid white bread and sugary sauces."
+  },
+  {
+    "intent": "diet_bp",
+    "questions": ["i have bp problem", "high blood pressure food", "low salt food"],
+    "answer": "Keep it heart-healthy! ❤️ Use garlic, lemon, and black pepper to flavor your food instead of salt. Potassium-rich foods like bananas and spinach are great too."
+  },
+  {
+    "intent": "diet_weight_loss",
+    "questions": ["weight loss food", "fat loss food", "gym diet"],
+    "answer": "Let's get fit! 💪 Focus on high-protein meals like grilled fish or boiled eggs, and swap white rice for cauliflower rice or quinoa."
+  },
+  {
+    "intent": "kids_lunchbox",
+    "questions": ["kids lunch ideas", "school lunchbox ideas"],
+    "answer": "Lunchbox win! 🍱 Try mini chicken wraps, pasta salad, or homemade potato wedges. They stay tasty even when cold!"
+  },
+  {
+    "intent": "kids_picky_eater",
+    "questions": ["picky eater recipes", "food for kids"],
+    "answer": "Dealing with a picky eater? 👧 Blend vegetables into your pasta sauce or make 'funny face' pancakes to make healthy eating fun!"
+  },
+{
+    "intent": "replace_meat_chicken",
+    "questions": ["what can i use instead of chicken", "can i use tofu instead of chicken"],
+    "answer": "Substituting chicken? **Tofu** or **Paneer** are great for stir-fries, while **Soya chunks** or **Seitan** work best for curries. Do you need a vegetarian or another meat option? 🍗"
+  },
+  {
+    "intent": "replace_meat_red",
+    "questions": ["meat substitute for beef", "vegetarian alternative for mutton", "meatless alternative for steak"],
+    "answer": "For beef or mutton, **Portobello mushrooms** or **Jackfruit** give that meaty texture. For steak, try a thick **Cauliflower** or **Cabbage steak**! 🥩"
+  },
+  {
+    "intent": "replace_meat_mince",
+    "questions": ["replace minced meat in pasta", "substitute for beef", "what replaces pepperoni"],
+    "answer": "In pasta, try **finely chopped mushrooms** or **cooked brown lentils** instead of mince. For beef/pepperoni, thin slices of **smoked tofu** or **sun-dried tomatoes** add that salty kick! 🍝"
+  },
+  {
+    "intent": "replace_dairy_cream",
+    "questions": ["no heavy cream what to use", "replace heavy cream with milk", "substitute for coconut milk"],
+    "answer": "Out of cream? Whisk **milk with melted butter**, or use **thick Greek yogurt**. For a dairy-free swap, **coconut cream** or **cashew paste** is perfect! 🥛"
+  },
+  {
+    "intent": "replace_dairy_yogurt",
+    "questions": ["replace yogurt", "what can i use instead of yogurt in curry", "no greek yogurt", "replace sour cream"],
+    "answer": "In curries, you can use **heavy cream** or **coconut milk** instead of yogurt. For baking, **sour cream** or **mashed bananas** work as great moisteners! 🥣"
+  },
+  {
+    "intent": "replace_veggie_tomato",
+    "questions": ["replace tomatoes", "no tomatoes at home", "tomato substitute"],
+    "answer": "No tomatoes? Use **yogurt** for bulk, **tamarind** for tang, or **red bell pepper paste** for color. Are you making a curry or a sauce? 🍅"
+  },
+  {
+    "intent": "replace_aromatics",
+    "questions": ["replace onion", "no garlic at home", "garlic substitute", "no ginger what to do"],
+    "answer": "Out of aromatics? Use **Asafoetida (Hing)** for a garlic-onion vibe, or **chives/scallions**. If you lack fresh ginger, a pinch of **ginger powder** works—just use less! 🧄"
+  },
+  {
+    "intent": "replace_baking_egg",
+    "questions": ["ran out of eggs for baking", "what replaces eggs in a cake", "can i use applesauce instead of eggs"],
+    "answer": "For baking, replace one egg with **half a mashed banana**, **1/4 cup applesauce**, or a **'flax egg'** (1 tbsp ground flax + 3 tbsp water). 🧁"
+  },
+  {
+    "intent": "fix_burnt",
+    "questions": ["food smells burnt", "how to salvage overcooked rice"],
+    "answer": "Smell smoke? 🚒 Move the unburnt part to a new pot immediately! For burnt rice, place a piece of **white bread** on top for 10 mins to soak up the smell. 🍞"
+  },
+  {
+    "intent": "fix_bitter_sour",
+    "questions": ["my curry is bitter", "too much lemon in food", "fix curdled gravy"],
+    "answer": "Bitter curry? Add a tiny bit of **sugar or honey**. Too sour? Add a pinch of **baking soda** or more fat (butter/cream) to neutralize the acid! 🍋"
+  },
+  {
+    "intent": "fix_bland",
+    "questions": ["food tastes bland", "how to balance taste"],
+    "answer": "Bland food usually needs **Acid** or **Salt**. Try a squeeze of lemon or a splash of vinegar—it 'wakes up' the flavors instantly! ✨"
+  },
+  {
+    "intent": "meal_midnight",
+    "questions": ["midnight snack ideas", "quickest snack", "fastest way to stop being hungry"],
+    "answer": "Midnight cravings? 🌙 Keep it simple: **Cereal**, a **cheese toastie**, or **peanut butter on toast**. Quick, quiet, and satisfying!"
+  },
+  {
+    "intent": "budget_broke",
+    "questions": ["cheap meals", "i am broke what to eat", "budget recipes", "student food ideas"],
+    "answer": "Broke but hungry? 💸 **Egg Fried Rice**, **Daal Chawal**, or **Potato Tacos** are super cheap and filling. Want a recipe using just pantry staples? 🥔"
+  },
+  {
+    "intent": "weather_rainy",
+    "questions": ["rainy day food", "monsoon snacks"],
+    "answer": "Rainy weather calls for **Pakoras and Chai**! ☕ Or maybe a bowl of spicy Ramen. Should I give you a recipe for crispy onion fritters? 🌧️"
+  },
+  {
+    "intent": "storage_veggies",
+    "questions": ["storing cut vegetables", "how to stop fruit from browning"],
+    "answer": "To keep cut veggies fresh, store them in water (like carrots/celery) or an airtight container with a damp paper towel. For fruit, a squeeze of **lemon juice** stops browning! 🍎"
+  },
+  {
+    "intent": "storage_bread",
+    "questions": ["keep bread fresh", "how to store food"],
+    "answer": "Keep bread in a cool, dry place in a paper bag. If you won't finish it in 2 days, **freeze it**! Never put bread in the fridge—it dries out faster. 🍞"
+  },
+  {
+    "intent": "taste_fix",
+    "questions": [
+      "food is too spicy",
+      "food is too salty",
+      "food is too sweet",
+      "food tastes bland",
+      "how to fix ruined food",
+      "how to balance taste"
+    ],
+    "answer": "You can balance taste by adding water, yogurt, lemon, sugar, or salt gradually depending on what the dish needs."
+  },
+
+  {
+    "intent": "meal_types",
+    "questions": [
+      "breakfast ideas",
+      "quick breakfast",
+      "lunch ideas",
+      "dinner ideas",
+      "snack ideas",
+      "evening snacks",
+      "midnight snack ideas"
+    ],
+    "answer": "Breakfast can be eggs or oats, lunch rice or roti meals, dinner lighter foods, and snacks like sandwiches or fruits."
+  },
+
+  
+  {
+    "intent": "weather_food",
+    "questions": [
+      "food for cold weather",
+      "food for hot weather",
+      "rainy day food",
+      "winter comfort food",
+      "summer light meals"
+    ],
+    "answer": "Cold weather suits soups and curries, while hot weather is better for light meals, salads, yogurt, and fruits."
+  },
+
+  {
+    "intent": "bot_info",
+    "questions": [
+      "who are you",
+      "what can you do",
+      "are you ai",
+      "are you human",
+      "who made you"
+    ],
+    "answer": "I’m BiteBuddy 🤖 — a smart recipe assistant here to help you cook, plan meals, and make better food choices."
+  },
+
+  {
+    "intent": "thanks",
+    "questions": [
+      "thanks",
+      "thank you",
+      "okay",
+      "alright",
+      "cool",
+      "nice"
+    ],
+    "answer": "You’re welcome! 😊 Let me know if you need more food ideas or cooking help."
+  }
+  
+]

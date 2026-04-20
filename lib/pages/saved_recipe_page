@@ -1,0 +1,217 @@
+import 'package:flutter/material.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import '../models/recipe.dart';
+import '../services/saved_recipe_service.dart';
+import './signup_page.dart';
+import './about_page.dart';
+import './user/user_home.dart';
+
+class SavedRecipesPage extends StatelessWidget {
+  const SavedRecipesPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    const Color peach = Color(0xFFFFE5B4);
+    const Color babyPink = Color(0xFFFFC0CB);
+    const Color black = Colors.black;
+
+    return FutureBuilder<List<String>>(
+      future: SavedRecipeService.getSavedRecipes(),
+      builder: (context, snapshot) {
+        if (!snapshot.hasData) {
+          return const Scaffold(
+            body: Center(child: CircularProgressIndicator()),
+          );
+        }
+
+        final savedIds = snapshot.data!;
+        final hasSaved = savedIds.isNotEmpty;
+
+        return Scaffold(
+          backgroundColor: peach,
+          appBar: AppBar(
+  backgroundColor: black,
+  title: const Text(
+    'Saved Recipes',
+    style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+  ),
+  iconTheme: const IconThemeData(color: Colors.white), // ✅ Makes back button white
+  actions: [
+    // Home
+    TextButton.icon(
+      onPressed: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (_) => UserHomePage()),
+        );
+      },
+      icon: const Icon(Icons.home, color: Colors.white),
+      label: const Text('Home',
+          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+    ),
+    // About
+    TextButton.icon(
+      onPressed: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (_) => AboutPage()),
+        );
+      },
+      icon: const Icon(Icons.info_outline, color: Colors.white),
+      label: const Text('About',
+          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+    ),
+    // Saved
+    TextButton.icon(
+      onPressed: () {}, // Already on Saved page
+      icon: const Icon(Icons.bookmark, color: Colors.white),
+      label: const Text('Saved',
+          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+    ),
+    // Profile
+    TextButton.icon(
+      onPressed: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (_) => const SignupPage()),
+        );
+      },
+      icon: const Icon(Icons.person, color: Colors.white),
+      label: const Text('Profile',
+          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+    ),
+    const SizedBox(width: 8),
+  ],
+),
+
+          body: hasSaved
+              ? StreamBuilder<QuerySnapshot>(
+                  stream: FirebaseFirestore.instance
+                      .collection('recipes')
+                      .where(FieldPath.documentId, whereIn: savedIds)
+                      .snapshots(),
+                  builder: (context, recipeSnap) {
+                    if (!recipeSnap.hasData) {
+                      return const Center(child: CircularProgressIndicator());
+                    }
+
+                    final docs = recipeSnap.data!.docs;
+
+                    return ListView.builder(
+                      padding: const EdgeInsets.all(16),
+                      itemCount: docs.length,
+                      itemBuilder: (context, index) {
+                        final doc = docs[index];
+                        final data = doc.data() as Map<String, dynamic>;
+
+                        final recipe = Recipe(
+                          id: doc.id,
+                          title: data['title'] ?? '',
+                          description: data['description'] ?? '',
+                          ingredients: data['ingredients'] ?? '',
+                          picture: data['picture'] ?? '',
+                          likes: data['likes'] ?? 0,
+                          categories: data['categories'] != null
+                              ? List<String>.from(data['categories'])
+                              : [],
+                        );
+
+                        final imageUrl = recipe.picture.isNotEmpty
+                            ? recipe.picture
+                            : 'https://via.placeholder.com/150';
+
+                        return Card(
+                          elevation: 4,
+                          color: babyPink.withOpacity(0.2),
+                          margin: const EdgeInsets.only(bottom: 16),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                          child: ListTile(
+                            contentPadding: const EdgeInsets.all(12),
+                            leading: ClipRRect(
+                              borderRadius: BorderRadius.circular(8),
+                              child: Image.network(
+                                imageUrl,
+                                width: 60,
+                                height: 60,
+                                fit: BoxFit.cover,
+                                errorBuilder: (_, __, ___) => Container(
+                                  width: 60,
+                                  height: 60,
+                                  color: babyPink,
+                                  child: const Icon(Icons.broken_image),
+                                ),
+                              ),
+                            ),
+                            title: Text(
+                              recipe.title,
+                              style: const TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: black,
+                              ),
+                            ),
+                            subtitle: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                const SizedBox(height: 4),
+                                Text(
+                                  recipe.description,
+                                  maxLines: 2,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: TextStyle(
+                                    color: black.withOpacity(0.7),
+                                  ),
+                                ),
+                                const SizedBox(height: 6),
+                                // Categories
+                                Wrap(
+                                  spacing: 6,
+                                  runSpacing: -8,
+                                  children: recipe.categories.map((cat) {
+                                    return Chip(
+                                      label: Text(
+                                        cat,
+                                        style: const TextStyle(fontSize: 11),
+                                      ),
+                                      backgroundColor: Colors.white,
+                                      side: BorderSide(color: babyPink),
+                                    );
+                                  }).toList(),
+                                ),
+                              ],
+                            ),
+                            trailing: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                const Icon(Icons.favorite, color: Colors.red, size: 16),
+                                const SizedBox(width: 4),
+                                Text('${recipe.likes}'),
+                                const SizedBox(width: 6),
+                                const Icon(Icons.arrow_forward_ios, size: 16),
+                              ],
+                            ),
+                            onTap: () {
+                              Navigator.pushNamed(
+                                context,
+                                '/recipeDetails',
+                                arguments: recipe,
+                              );
+                            },
+                          ),
+                        );
+                      },
+                    );
+                  },
+                )
+              : const Center(
+                  child: Text(
+                    'No saved recipes yet.',
+                    style: TextStyle(fontSize: 16),
+                  ),
+                ),
+        );
+      },
+    );
+  }
+}
